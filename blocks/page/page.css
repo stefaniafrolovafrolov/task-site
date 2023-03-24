@@ -1,0 +1,8 @@
+.page {
+  width: 1440px;
+  height: 100%;
+  background: #0c1c3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

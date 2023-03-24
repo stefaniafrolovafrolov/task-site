@@ -1,0 +1,12 @@
+.error {
+  position: absolute;
+  top: 85px;
+  left: 18px;
+  max-width: 552px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  color: #a01e1e;
+  display: block;
+}

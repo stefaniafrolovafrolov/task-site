@@ -1,0 +1,5 @@
+.header__user-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

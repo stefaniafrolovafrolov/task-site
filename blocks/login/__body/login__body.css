@@ -1,0 +1,11 @@
+.login__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 920px;
+  height: 474px;
+  left: 260px;
+  top: 275px;
+  background: #ffffff;
+  border-radius: 0px 0px 5px 5px;
+}

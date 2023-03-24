@@ -1,0 +1,11 @@
+.login__input {
+  outline: none;
+  overflow: hidden;
+  margin-bottom: 40px;
+  padding: 0 20px 0 20px;
+  width: 600px;
+  height: 78px;
+  background: #f4f6fa;
+  border: 1px solid #cedbf5;
+  border-radius: 5px;
+}

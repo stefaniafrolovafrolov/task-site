@@ -1,0 +1,15 @@
+.header__button-close {
+  align-self: center;
+  height: 29px;
+  width: 85px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  outline: none;
+}

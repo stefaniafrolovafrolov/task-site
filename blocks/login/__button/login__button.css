@@ -1,0 +1,17 @@
+.login__button {
+  cursor: pointer;
+  border: none;
+  width: 600px;
+  height: 78px;
+  left: 420px;
+  top: 591px;
+  background: #1e46a0;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

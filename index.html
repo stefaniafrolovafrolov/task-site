@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Создаю новый сайт задач</h1>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" type="text/css" />
+    <title>Страница авторизации</title>
+  </head>
+  <body class="root">
+    <div class="page">
+      <div class="login">
+        <div class="login__header">
+          <a href="/authorized-user.html">  <h1 class="login__title">Добро пожаловать!</h1></a>
+        </div>
+
+        <div class="login__body">
+          <form class="login__form">
+            <label class="login__label">
+              <input
+                class="login__input login__input_type_login"
+                type="text"
+                placeholder="Логин"
+                name="login"
+                id="login"
+                
+              />
+              <span class="login-error error">Неправильно введён логин</span>
+            </label>
+
+            <label class="login__label">
+              <input
+                class="login__input login__input_type_password"
+                type="text"
+                placeholder="Пароль"
+                name="password"
+                id="password"
+                
+              />
+              <span class="password-error error"
+                >Неправильно введён пароль</span
+              >
+            </label>
+
+            <button class="login__button login__button_disabled" type="submit">
+              Войти в систему
+            </button>
+          
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
