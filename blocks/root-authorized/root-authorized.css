@@ -1,4 +1,4 @@
 .root-authorized {
-  height: 100%;
+  min-height: 100vh;
   border: solid 22px red;
 }
