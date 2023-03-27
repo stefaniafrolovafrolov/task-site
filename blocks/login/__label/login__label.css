@@ -1,3 +1,15 @@
 .login__label {
   position: relative;
 }
+
+@media screen and (max-width: 950px) {
+  .login__label {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .login__label {
+    max-width: 100%;
+  }
+}

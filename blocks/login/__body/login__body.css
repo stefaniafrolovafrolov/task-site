@@ -4,8 +4,19 @@
   align-items: center;
   width: 920px;
   height: 474px;
-  left: 260px;
-  top: 275px;
   background: #ffffff;
   border-radius: 0px 0px 5px 5px;
+}
+
+@media screen and (max-width: 950px) {
+  .login__body {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .login__body {
+    width: 280px;
+    height: 281px;
+  }
 }

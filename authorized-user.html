@@ -32,54 +32,7 @@
   </head>
   <body class="root-authorized">
     <div class="page-authorized">
-      <div class="popup">
-        <div class="popup__container">
-          <div class="popup__header">
-            <button class="popup__close"></button>
-            <h2 class="popup__title">Создать новую задачу</h2>
-          </div>
-          <div class="popup__body">
-            <div class="popup__wrapper-block">
-              <label class="popup__label">
-                <input
-                  class="popup__input"
-                  id="name"
-                  type="text"
-                  placeholder="Название задачи"
-                />
-                <span class="name-error error error_popup-top"
-                  >Ошибка в названии</span
-                >
-              </label>
-              <form class="content__form2 content__form2_size">
-                <p class="content__input2 content__input2_size">
-                  Статус задачи
-                </p>
-                <button class="content__button-input2" type="button"></button>
-              </form>
-            </div>
-            <form class="popup__form">
-              <label class="popup__label-textarea">
-                <textarea
-                  class="popup__textarea"
-                  rows="10"
-                  cols="45"
-                  name="text"
-                  id="text"
-                  placeholder="Описание заадчи"
-                ></textarea>
-                <span class="text-error error error_popup-top2"
-                  >Слишком короткое описание</span
-                >
-              </label>
-              <button class="popup__button" type="submit">
-                Создать задачу
-              </button>
-            </form>
-          </div>
-          <div class=""></div>
-        </div>
-      </div>
+      
 
       <header class="header">
         <div class="header__container">
@@ -104,6 +57,7 @@
       </header>
 
       <main class="content">
+       
         <div class="content__header">
           <button
             type="button"
@@ -260,6 +214,55 @@
       <footer class="footer">
         <p class="footer__copyright">&copy; Знак авторского права</p>
       </footer>
+
+      <div class="popup">
+        <div class="popup__container">
+          <div class="popup__header">
+            <button class="popup__close"></button>
+            <h2 class="popup__title">Создать новую задачу</h2>
+          </div>
+          <div class="popup__body">
+            <div class="popup__wrapper-block">
+              <label class="popup__label">
+                <input
+                  class="popup__input"
+                  id="name"
+                  type="text"
+                  placeholder="Название задачи"
+                />
+                <span class="name-error error error_popup-top"
+                  >Ошибка в названии</span
+                >
+              </label>
+              <form class="content__form2 content__form2_size">
+                <p class="content__input2 content__input2_size">
+                  Статус задачи
+                </p>
+                <button class="content__button-input2" type="button"></button>
+              </form>
+            </div>
+            <form class="popup__form">
+              <label class="popup__label-textarea">
+                <textarea
+                  class="popup__textarea"
+                  rows="10"
+                  cols="45"
+                  name="text"
+                  id="text"
+                  placeholder="Описание заадчи"
+                ></textarea>
+                <span class="text-error error error_popup-top2"
+                  >Слишком короткое описание</span
+                >
+              </label>
+              <button class="popup__button" type="submit">
+                Создать задачу
+              </button>
+            </form>
+          </div>
+         
+        </div>
+      </div>
     </div>
 
     <script src="./scripts/index.js"></script>

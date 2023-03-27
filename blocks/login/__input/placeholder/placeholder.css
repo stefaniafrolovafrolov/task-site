@@ -7,3 +7,13 @@
   line-height: 150%;
   color: #1e46a0;
 }
+
+@media screen and (max-width: 320px) {
+  ::placeholder {
+    max-width: 230px;
+    font-size: 16px;
+    text-align: justify;
+    color: #1e46a0;
+    padding: 14px 0 14px 14px;
+  }
+}
