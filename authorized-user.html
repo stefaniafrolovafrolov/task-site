@@ -1,135 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" type="text/css" />
-    <title>Document</title>
+    <title>Authorized user</title>
 
     <style>
-      .content__header {
-        background: #1e46a0;
-        box-shadow: 0px 0px 50px rgba(30, 70, 160, 0.25);
-        border-radius: 5px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+     
 
-      .content__button-tasks {
-        border: none;
-        background: transparent;
-        height: 24px;
-        font-family: "Inter";
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        text-transform: uppercase;
-        color: #ffffff;
-      }
+     
 
-      .content {
-        border: solid 13px red;
-        height: 1200px;
-        width: 1200px;
-        margin: 80px auto 70px;
-      }
+    
 
-      .content__wrapper-form {
-        margin: 40px 0 40px 0;
-        display: flex;
-      }
+      
 
-      .content__form {
-        display: flex;
-        width: 282px;
-        height: 50px;
-      }
+      
 
-      .content__input {
-        box-sizing: border-box;
-        outline: none;
-        width: 234px;
-        height: 50px;
-        background: #f4f6fa;
-        border: 1px solid #cedbf5;
-        border-radius: 5px;
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-      }
+      
+   
 
-      .content__input::placeholder {
-        padding: 14px 0 14px 14px;
-        max-width: 77px;
-        font-family: "Inter";
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #1e46a0;
-      }
+     
 
-      .content__button-input {
-        border: none;
-        background: transparent;
-        background-image: url(./images/Group.svg);
 
-        width: 48px;
-        height: 50px;
+     
 
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
-        
-      }
 
-      .content__form2 {
-        margin-left: 20px;
-        display: flex;
-        width: 313px;
-        height: 50px;
-      }
 
-      .content__input2 {
-        outline: none;
-        box-sizing: border-box;
-        width: 234px;
-        height: 50px;
-        background: #f4f6fa;
-        border: 1px solid #cedbf5;
-        border-radius: 5px;
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-      }
-
-      .content__input2::placeholder {
-        padding: 14px 0 14px 37px;
-
-        font-family: "Inter";
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #1e46a0;
-      }
-
-      .content__button-input2 {
-        border: none;
-        background: transparent;
-        background-image: url(./images/Стрелка.svg);
-
-        width: 48px;
-        height: 50px;
-
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
-      }
     </style>
   </head>
   <body class="root-authorized">
     <div class="page-authorized">
+      <div class="popup">
+        <div class="popup__container">
+          <div class="popup__header">
+            <button class="popup__close"></button>
+            <h2 class="popup__title">Создать новую задачу</h2>
+          </div>
+          <div class="popup__body">
+            <div class="popup__wrapper-block">
+              <label class="popup__label">
+                <input
+                  class="popup__input"
+                  id="name"
+                  type="text"
+                  placeholder="Название задачи"
+                />
+                <span class="name-error error error_popup-top"
+                  >Ошибка в названии</span
+                >
+              </label>
+              <form class="content__form2 content__form2_size">
+                <p class="content__input2 content__input2_size">
+                  Статус задачи
+                </p>
+                <button class="content__button-input2" type="button"></button>
+              </form>
+            </div>
+            <form class="popup__form">
+              <label class="popup__label-textarea">
+                <textarea
+                  class="popup__textarea"
+                  rows="10"
+                  cols="45"
+                  name="text"
+                  id="text"
+                  placeholder="Описание заадчи"
+                ></textarea>
+                <span class="text-error error error_popup-top2"
+                  >Слишком короткое описание</span
+                >
+              </label>
+              <button class="popup__button" type="submit">
+                Создать задачу
+              </button>
+            </form>
+          </div>
+          <div class=""></div>
+        </div>
+      </div>
+
       <header class="header">
         <div class="header__container">
           <div class="header__user-name">
@@ -138,19 +89,28 @@
               src="./images/free-icon-user-149071 1.svg"
               alt="изображение аватара пользователя"
             />
-            <p class="header__title-avatar">Имя Пользователя</p>
+            <a href="/specific-issue-page.html">
+              <p class="header__title-avatar">Имя Пользователя</p></a
+            >
           </div>
           <div class="header__buttons">
-            <button class="header__button-tasks">Задачи</button>
-            <button class="header__button-create">Создать задачу</button>
+            <button type="button" class="header__button-tasks">Задачи</button>
+            <button type="button" class="header__button-create">
+              Создать задачу
+            </button>
           </div>
-          <button class="header__button-close">Выйти</button>
+          <button type="button" class="header__button-close">Выйти</button>
         </div>
       </header>
 
       <main class="content">
         <div class="content__header">
-          <button class="content__button-tasks">Все Задачи</button>
+          <button
+            type="button"
+            class="content__button-tasks content__button-tasks_type_tasks"
+          >
+            Все Задачи
+          </button>
 
           <div class="content__wrapper-form">
             <form class="content__form">
@@ -159,18 +119,141 @@
                 type="text"
                 placeholder="Поиск..."
               />
-              <button class="content__button-input" type="submit"></button>
+              <button class="content__button-input" type="button"></button>
             </form>
 
+            <div class="wrapper__content-form2">
+              <form class="content__form2">
+                <p class="content__input2">Статус задачи</p>
+                <button class="content__button-input2" type="button"></button>
+              </form>
+              <ul class="content__form2-popup">
+                <li id="open" class="content__form2-item">Open</li>
+                <li id="close" class="content__form2-item">Close</li>
+                <li id="progress" class="content__form2-item">In progress</li>
+                <li id="verification" class="content__form2-item">
+                  verification needed
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-name">
+          <div class="task-name__wrapper-form">
             <form class="content__form2">
-              <input
-                class="content__input2"
-                type="text"
-                placeholder="Статус задачи"
-              />
-              <button class="content__button-input2" type="submit"></button>
+              <p class="content__input2">Статус задачи</p>
+              <button class="content__button-input2" type="button"></button>
             </form>
           </div>
+
+          <h2 class="task-name__title">Название задачи</h2>
+          <ul class="task-name__list">
+            <li class="task-name__item">
+              Исполнитель:<span class="task-name__item-span"
+                >Имя Исполнителя</span
+              >
+            </li>
+            <li class="task-name__item">
+              Дата создания:<span class="task-name__item-span">
+                19.03.2023 16:30</span
+              >
+            </li>
+            <li class="task-name__item">
+              Дата изменения:<span class="task-name__item-span">
+                19.03.2023 17:30</span
+              >
+            </li>
+          </ul>
+
+          <p class="task-name__text">
+            Это текст-&laquo;рыба&raquo;, часто используемый в&nbsp;печати
+            и&nbsp;вэб-дизайне. Lorem Ipsum является стандартной
+            &laquo;рыбой&raquo; для текстов на&nbsp;латинице с&nbsp;начала
+            XVI&nbsp;века. В&nbsp;то&nbsp;время некий безымянный печатник создал
+            большую коллекцию размеров и&nbsp;форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов.Lorem Ipsum не&nbsp;только успешно
+            пережил без заметных изменений пять веков, но&nbsp;и&nbsp;перешагнул
+            в&nbsp;электронный дизайн.
+          </p>
+        </div>
+
+        <div class="task-name">
+          <div class="task-name__wrapper-form">
+            <form class="content__form2">
+              <p class="content__input2">Статус задачи</p>
+              <button class="content__button-input2" type="button"></button>
+            </form>
+          </div>
+
+          <h2 class="task-name__title">Название задачи</h2>
+          <ul class="task-name__list">
+            <li class="task-name__item">
+              Исполнитель:<span class="task-name__item-span"
+                >Имя Исполнителя</span
+              >
+            </li>
+            <li class="task-name__item">
+              Дата создания:<span class="task-name__item-span">
+                19.03.2023 16:30</span
+              >
+            </li>
+            <li class="task-name__item">
+              Дата изменения:<span class="task-name__item-span">
+                19.03.2023 17:30</span
+              >
+            </li>
+          </ul>
+
+          <p class="task-name__text">
+            Это текст-&laquo;рыба&raquo;, часто используемый в&nbsp;печати
+            и&nbsp;вэб-дизайне. Lorem Ipsum является стандартной
+            &laquo;рыбой&raquo; для текстов на&nbsp;латинице с&nbsp;начала
+            XVI&nbsp;века. В&nbsp;то&nbsp;время некий безымянный печатник создал
+            большую коллекцию размеров и&nbsp;форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов.Lorem Ipsum не&nbsp;только успешно
+            пережил без заметных изменений пять веков, но&nbsp;и&nbsp;перешагнул
+            в&nbsp;электронный дизайн.
+          </p>
+        </div>
+
+        <div class="task-name">
+          <div class="task-name__wrapper-form">
+            <form class="content__form2">
+              <p class="content__input2">Статус задачи</p>
+              <button class="content__button-input2" type="button"></button>
+            </form>
+          </div>
+
+          <h2 class="task-name__title">Название задачи</h2>
+          <ul class="task-name__list">
+            <li class="task-name__item">
+              Исполнитель:<span class="task-name__item-span"
+                >Имя Исполнителя</span
+              >
+            </li>
+            <li class="task-name__item">
+              Дата создания:<span class="task-name__item-span">
+                19.03.2023 16:30</span
+              >
+            </li>
+            <li class="task-name__item">
+              Дата изменения:<span class="task-name__item-span">
+                19.03.2023 17:30</span
+              >
+            </li>
+          </ul>
+
+          <p class="task-name__text">
+            Это текст-&laquo;рыба&raquo;, часто используемый в&nbsp;печати
+            и&nbsp;вэб-дизайне. Lorem Ipsum является стандартной
+            &laquo;рыбой&raquo; для текстов на&nbsp;латинице с&nbsp;начала
+            XVI&nbsp;века. В&nbsp;то&nbsp;время некий безымянный печатник создал
+            большую коллекцию размеров и&nbsp;форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов.Lorem Ipsum не&nbsp;только успешно
+            пережил без заметных изменений пять веков, но&nbsp;и&nbsp;перешагнул
+            в&nbsp;электронный дизайн.
+          </p>
         </div>
       </main>
 
@@ -178,5 +261,7 @@
         <p class="footer__copyright">&copy; Знак авторского права</p>
       </footer>
     </div>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,21 @@
+.content__input2 {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  width: 234px;
+  height: 50px;
+  background: #f4f6fa;
+  border: 1px solid #cedbf5;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 14px 0 14px 37px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #1e46a0;
+}

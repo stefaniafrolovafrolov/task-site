@@ -1,0 +1,5 @@
+.popup__wrapper-block {
+  display: flex;
+  justify-content: center;
+  margin: 40px 40px;
+}

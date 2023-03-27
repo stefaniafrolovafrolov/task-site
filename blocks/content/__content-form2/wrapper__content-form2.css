@@ -1,0 +1,5 @@
+.wrapper__content-form2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

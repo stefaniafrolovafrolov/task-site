@@ -1,0 +1,10 @@
+.task-name__text {
+  margin: 10px 40px 40px 40px;
+  max-width: 1120px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: justify;
+  color: #1e46a0;
+}

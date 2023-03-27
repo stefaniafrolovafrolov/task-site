@@ -1,5 +1,7 @@
 .page-authorized {
-  border: solid 6px rgb(26, 209, 72);
+  position: relative;
+  height: 100%;
+  border: solid 26px rgb(26, 209, 72);
   max-width: 1440px;
   margin: 0 auto;
 }

@@ -16,6 +16,8 @@
 @import url("../blocks/login/__button/_disabled/login__button_disabled.css");
 @import url("../blocks/login/__input/placeholder/placeholder.css");
 @import url("../blocks/login/__input/error/error.css");
+@import url("../blocks/login/__input/error/_popup-top/error_popup-top.css");
+@import url("../blocks/login/__input/error/_popup-top2/error_popup-top2.css");
 
 @import url("../blocks/root-authorized/root-authorized.css");
 @import url("../blocks/page-authorized/page-authorized.css");
@@ -32,34 +34,68 @@
 
 
 
+
+
+
+
+@import url("../blocks/content/content.css");
+@import url("../blocks/content/__header/content__header.css");
+@import url("../blocks/content/__button-tasks/content__button-tasks.css");
+@import url("../blocks/content/__wrapper-form/content__wrapper-form.css");
+@import url("../blocks/content/__form/content__form.css");
+@import url("../blocks/content/__input/content__input.css");
+@import url("../blocks/content/__button-input/content__button-input.css");
+@import url("../blocks/content/__form2/content__form2.css");
+@import url("../blocks/content/__input2/content__input2.css");
+@import url("../blocks/content/__button-input2/content__button-input2.css");
+@import url("../blocks/content/__content-form2/wrapper__content-form2.css");
+@import url("../blocks/content/__form2-popup/content__form2-popup.css");
+@import url("../blocks/content/__form2-popup_opened/content__form2-popup_opened.css");
+@import url("../blocks/content/__form2-item/content__form2-item.css");
+@import url("../blocks/content/__form2_size/content__form2_size.css");
+@import url("../blocks/content/__input2_size/content__input2_size.css");
+
+
+@import url("../blocks/task-name/task-name.css");
+@import url("../blocks/task-name/__title/task-name__title.css");
+@import url("../blocks/task-name/__list/task-name__list.css");
+@import url("../blocks/task-name/__item/task-name__item.css");
+@import url("../blocks/task-name/__item-span/task-name__item-span.css");
+@import url("../blocks/task-name/__text/task-name__text.css");
+@import url("../blocks/content/__header-wrapper/content__header-wrapper.css");
+@import url("../blocks/comments/comments.css");
+@import url("../blocks/comments/__title/comments__title.css");
+@import url("../blocks/comments/__header/comments__header.css");
+@import url("../blocks/comments/__footer/comments__footer.css");
+@import url("../blocks/comments/__footer-title/comments__footer-title.css");
+@import url("../blocks/comments/__footer-input/comments__footer-input.css");
+@import url("../blocks/comments/__footer-button/comments__footer-button.css");
+
+@import url("../blocks/wrapper-task-name/wrapper-task-name.css");
+@import url("../blocks/task-name/__wrapper-form/task-name__wrapper-form.css");
+
+@import url("../blocks/popup/popup.css");
+@import url("../blocks/popup/_opened/popup_opened.css");
+@import url("../blocks/popup/__container/popup__container.css");
+@import url("../blocks/popup/__header/popup__header.css");
+@import url("../blocks/popup/__form/popup__form.css");
+@import url("../blocks/popup/__close/popup__close.css");
+@import url("../blocks/popup/__title/popup__title.css");
+@import url("../blocks/popup/__wrapper-block/popup__wrapper-block.css");
+@import url("../blocks/popup/__input/popup__input.css");
+@import url("../blocks/popup/__textarea/popup__textarea.css");
+@import url("../blocks/popup/__button/popup__button.css");
+@import url("../blocks/popup/__label/popup__label.css");
+@import url("../blocks/popup/__label-textarea/popup__ladel-textarea.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+
+
+
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__copyright/footer__copyright.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-
-
-
 
 
 

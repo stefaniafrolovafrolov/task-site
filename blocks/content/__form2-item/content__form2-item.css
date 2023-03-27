@@ -1,0 +1,20 @@
+.content__form2-item {
+  margin: 0;
+  padding: 13px 0 15px 37px;
+  background: #f4f6fa;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #cedbf5;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #1e46a0;
+}
+
+.content__form2-item:hover {
+  background: #e1e9fa;
+  border: 2px solid #1a66f4;
+}

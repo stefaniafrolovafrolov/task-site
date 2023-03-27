@@ -1,0 +1,10 @@
+.task-name__title {
+  margin: 40px 0 20px 40px;
+  max-width: 203px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: underline;
+  color: #1e46a0;
+}

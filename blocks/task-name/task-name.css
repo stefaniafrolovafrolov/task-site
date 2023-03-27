@@ -1,0 +1,7 @@
+.task-name {
+  position: relative;
+  max-width: 1200px;
+  background: rgba(30, 70, 160, 0.05);
+  border-bottom: 1px solid #1e46a0;
+  border: solid 2px red;
+}

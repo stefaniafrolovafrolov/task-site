@@ -1,0 +1,15 @@
+.popup__close {
+  z-index: 7777777777;
+  display: block;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url(../../../images/Close-Icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 20px;
+  height: 20px;
+}
