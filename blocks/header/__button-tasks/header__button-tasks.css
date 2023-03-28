@@ -14,3 +14,18 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media screen and (max-width: 1050px) {
+  .header__button-tasks {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .header__button-tasks {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+

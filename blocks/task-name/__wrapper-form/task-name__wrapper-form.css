@@ -3,3 +3,36 @@
   right: 40px;
   position: absolute;
 }
+
+@media screen and (max-width: 1050px) {
+  .task-name__wrapper-form {
+    top: 20px;
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  .task-name__wrapper-form {
+    top: 55px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .task-name__wrapper-form {
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .task-name__wrapper-form {
+    top: 50px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .task-name__wrapper-form {
+    top: 50px;
+    left: 10px;
+  }
+}

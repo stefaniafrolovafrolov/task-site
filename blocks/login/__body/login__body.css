@@ -10,11 +10,29 @@
 
 @media screen and (max-width: 950px) {
   .login__body {
-    max-width: 100%;
+    width: 600px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
+  .login__body {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .login__body {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .login__body {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 360px) {
   .login__body {
     width: 280px;
     height: 281px;

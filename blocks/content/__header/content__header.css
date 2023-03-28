@@ -3,6 +3,21 @@
   box-shadow: 0px 0px 50px rgba(30, 70, 160, 0.25);
   border-radius: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 538px) {
+  .content__header {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__header {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }

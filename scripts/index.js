@@ -26,3 +26,8 @@ buttonOpenPopup.addEventListener("click", () => {
 buttonClosePopup.addEventListener("click", () => {
   closePopup(popup)
 })
+
+
+
+
+

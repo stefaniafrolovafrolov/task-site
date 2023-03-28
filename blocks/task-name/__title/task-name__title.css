@@ -1,5 +1,6 @@
 .task-name__title {
-  margin: 40px 0 20px 40px;
+  padding-top: 40px;
+  margin: 0 0 20px 40px;
   max-width: 203px;
   font-family: "Inter";
   font-weight: 500;
@@ -7,4 +8,31 @@
   line-height: 29px;
   text-decoration-line: underline;
   color: #1e46a0;
+  text-underline-offset: 5px;
+}
+
+@media screen and (max-width: 716px) {
+  .task-name__title {
+    padding-top: 27px;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .task-name__title {
+    padding-top: 20px;
+    margin: 0 0 100px 50px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .task-name__title {
+    margin: 0 0 100px 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .task-name__title {
+    margin: 0 0 100px 10px;
+  }
 }

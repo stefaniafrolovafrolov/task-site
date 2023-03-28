@@ -8,3 +8,15 @@
   text-align: justify;
   color: #1e46a0;
 }
+
+@media screen and (max-width: 490px) {
+  .task-name__text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .task-name__text {
+    margin: 10px 10px 20px 10px;
+  }
+}

@@ -1,0 +1,37 @@
+.login__title {
+  margin: 0;
+  padding: 40px 0 40px 0;
+  max-width: 411px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 950px) {
+  .login__title {
+    padding: 35px 0 35px 0;
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .login__title {
+    padding: 30px 0 30px 0;
+    max-width: 300px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .login__title {
+    padding: 30px 0 30px 0;
+    max-width: 206px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

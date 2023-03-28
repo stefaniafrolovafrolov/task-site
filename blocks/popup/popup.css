@@ -1,6 +1,5 @@
 .popup {
   height: 100%;
-  max-width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -13,4 +12,10 @@
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
   background: rgba(12, 28, 63, 0.8);
+}
+
+@media screen and (max-width: 500px) {
+  .popup {
+    width: 100%;
+  }
 }

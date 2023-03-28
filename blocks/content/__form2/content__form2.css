@@ -4,3 +4,15 @@
   width: 263px;
   height: 50px;
 }
+
+@media screen and (max-width: 1050px) {
+  .content__form2 {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__form2 {
+   margin-left: 0;
+  }
+}

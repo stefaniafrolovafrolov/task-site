@@ -9,3 +9,10 @@
   text-transform: uppercase;
   color: #f3efef;
 }
+
+@media screen and (max-width: 425px) {
+  .header__title-avatar {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

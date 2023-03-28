@@ -1,6 +1,6 @@
 .root {
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   background: rgba(12, 28, 63, 1);
   display: flex;
   justify-content: center;

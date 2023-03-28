@@ -6,7 +6,7 @@
 
 @import url("../blocks/login/login.css");
 @import url("../blocks/login/__header/login__header.css");
-@import url("../blocks/login/__title/header__title.css");
+@import url("../blocks/login/__title/login__title.css");
 @import url("../blocks/login/__body/login__body.css");
 @import url("../blocks/login/__form/login__form.css");
 @import url("../blocks/login/__label/login__label.css");
@@ -57,6 +57,7 @@
 
 
 @import url("../blocks/task-name/task-name.css");
+@import url("../blocks/task-name/_background/task-name_background.css");
 @import url("../blocks/task-name/__title/task-name__title.css");
 @import url("../blocks/task-name/__list/task-name__list.css");
 @import url("../blocks/task-name/__item/task-name__item.css");

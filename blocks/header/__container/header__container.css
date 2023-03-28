@@ -3,3 +3,28 @@
   display: flex;
   justify-content: space-between;
 }
+
+
+@media screen and (max-width: 1260px) {
+  .header__container {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header__container {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 936px) {
+  .header__container {
+    width: 740px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .header__container {
+    flex-direction: column;
+  }
+}

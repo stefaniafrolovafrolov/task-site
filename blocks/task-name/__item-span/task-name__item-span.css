@@ -6,3 +6,10 @@
   line-height: 24px;
   color: #1e46a0;
 }
+
+@media screen and (max-width: 490px) {
+  .task-name__item-span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

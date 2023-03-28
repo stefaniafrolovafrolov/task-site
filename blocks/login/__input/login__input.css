@@ -1,7 +1,7 @@
 .login__input {
   outline: none;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   width: 600px;
   height: 78px;
   background: #f4f6fa;
@@ -11,11 +11,23 @@
 
 @media screen and (max-width: 950px) {
   .login__input {
-    max-width: 100%;
+    width: 485px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
+  .login__input {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .login__input {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 360px) {
   .login__input {
     margin-bottom: 35px;
     width: 258px;

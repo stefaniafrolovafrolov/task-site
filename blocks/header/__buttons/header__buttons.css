@@ -3,3 +3,28 @@
   align-items: center;
   margin-right: 110px;
 }
+
+@media screen and (max-width: 1260px) {
+  .header__buttons {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header__buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .header__buttons {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .header__buttons {
+    display: none;
+  }
+}

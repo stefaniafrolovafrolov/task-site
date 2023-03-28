@@ -8,13 +8,33 @@
 
 @media screen and (max-width: 950px) {
   .login {
-    max-width: 80%;
+    width: 600px;
+    min-height: 558px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .login {
-    max-width: 100%;
+    width: 500px;
+    min-height: 460px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .login {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .login {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .login {
+    width: 280px;
     min-height: 363px;
   }
 }

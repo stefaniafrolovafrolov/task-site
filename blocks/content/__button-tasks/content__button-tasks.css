@@ -8,4 +8,37 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 538px) {
+  .content__button-tasks {
+    margin: 20px 0 0 77px;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .content__button-tasks {
+    margin: 20px 0 0 57px;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content__button-tasks {
+    margin: 20px 0 10px 60px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .content__button-tasks {
+    margin: 20px 0 10px 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__button-tasks {
+    margin: 20px 0 10px 10px;
+  }
 }
