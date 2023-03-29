@@ -5,3 +5,24 @@
   padding: 40px 40px;
   width: 1120px;
 }
+
+@media screen and (max-width: 636px) {
+  .content__header-wrapper {
+    flex-direction: column;
+    padding: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .content__header-wrapper {
+    width: 100%;
+    padding: 30px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__header-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+}

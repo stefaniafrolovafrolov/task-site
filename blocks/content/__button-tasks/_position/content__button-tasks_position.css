@@ -1,0 +1,26 @@
+.content__button-tasks_position {
+  margin-left: 0;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media screen and (max-width: 716px) {
+  .content__button-tasks_position {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .content__button-tasks_position {
+    margin: 20px 10px 10px 10px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__button-tasks_position {
+    margin: 20px 10px 0px 10px;
+    align-self: flex-start;
+  }
+}

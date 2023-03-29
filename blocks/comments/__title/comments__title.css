@@ -9,3 +9,16 @@
   color: #ffffff;
   padding: 40px 0 40px 40px;
 }
+
+@media screen and (max-width: 716px) {
+  .comments__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .comments__title {
+    padding: 20px 0 20px 10px;
+  }
+}

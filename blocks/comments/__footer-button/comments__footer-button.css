@@ -12,3 +12,22 @@
   background: #4381f5;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 475px) {
+  .comments__footer-button {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .comments__footer-button {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .comments__footer-button {
+    width: 260px;
+    margin: 0 0 20px 10px;
+  }
+}
