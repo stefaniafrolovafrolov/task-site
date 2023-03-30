@@ -15,6 +15,11 @@
   color: #ffffff;
 }
 
+.header__button-tasks:hover {
+  background: rgba(26, 102, 244, 1);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1050px) {
   .header__button-tasks {
     margin-right: 0;

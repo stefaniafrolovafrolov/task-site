@@ -13,3 +13,14 @@
   width: 20px;
   height: 20px;
 }
+
+@media screen and (max-width: 420px) {
+  .popup__close {
+    background-image: url(../../../images/Close-Icon-mobile.png);
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    top: 17px;
+    right: 10px;
+  }
+}

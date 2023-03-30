@@ -3,20 +3,36 @@
   min-height: 430px;
   background-color: #fff;
   border-radius: 6px 6px 5px 5px;
-  border: solid 7px red;
+  box-shadow: 0px 0px 50px rgba(67, 129, 245, 0.5);
+  position: relative;
 }
 
 @media screen and (max-width: 800px) {
   .popup__container {
     width: 600px;
-    
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 618px) {
   .popup__container {
-    width: ;
-    
+    width: 500px;
   }
 }
 
+@media screen and (max-width: 520px) {
+  .popup__container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .popup__container {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .popup__container {
+    width: 280px;
+  }
+}

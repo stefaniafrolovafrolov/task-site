@@ -46,17 +46,20 @@
 @import url("../blocks/content/__button-input2/content__button-input2.css");
 @import url("../blocks/content/__content-form2/wrapper__content-form2.css");
 @import url("../blocks/content/__form2-popup/content__form2-popup.css");
-@import url("../blocks/content/__form2-popup_opened/content__form2-popup_opened.css");
-@import url("../blocks/content/__form2-item/content__form2-item.css");
+
 @import url("../blocks/content/__form2_size/content__form2_size.css");
+
+@import url("../blocks/content/__form2-popup_opened/content__form2-popup_opened.css");
+
 @import url("../blocks/content/__input2_size/content__input2_size.css");
+@import url("../blocks/content/__form2-item/content__form2-item.css");
+@import url("../blocks/content/__form2-item/_size/content__form2-item_size.css");
+@import url("../blocks/content/__form2-popup/_type/content__form2-popup_type_verification.css");
 
 @import url("../blocks/task-name/task-name.css");
 @import url("../blocks/task-name/_background/task-name_background.css");
-
 @import url("../blocks/task-name/_border-none/task-name_border-none.css");
 @import url("../blocks/task-name/_background-2/task-name_background-2.css");
-
 @import url("../blocks/task-name/__title/task-name__title.css");
 @import url("../blocks/task-name/__list/task-name__list.css");
 @import url("../blocks/task-name/__item/task-name__item.css");

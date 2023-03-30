@@ -7,3 +7,7 @@
   border-radius: 0px 5px 5px 0px;
   cursor: pointer;
 }
+
+.content__button-input:hover {
+  background-image: url(../../../images/Group-lupa-hover.png);
+}

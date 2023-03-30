@@ -8,3 +8,34 @@
   letter-spacing: -0.03em;
   color: #1e46a0;
 }
+
+@media screen and (max-width: 1050px) {
+  .content__input2_size {
+   
+   
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content__input2_size {
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .content__input2_size {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content__input2_size {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content__input2_size {
+    width: 212px;
+  }
+}

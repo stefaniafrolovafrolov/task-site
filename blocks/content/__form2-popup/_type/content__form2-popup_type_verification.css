@@ -1,0 +1,47 @@
+.content__form2-popup_type_verification {
+  position: absolute;
+  top: 213px;
+  right: 80px;
+  width: 200px;
+}
+
+@media screen and (max-width: 1050px) {
+  .content__form2-popup_type_verification {
+    right: 85px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content__form2-popup_type_verification {
+    top: 273px;
+    right: 40px;
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .content__form2-popup_type_verification {
+    top: 259px;
+    right: 40px;
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content__form2-popup_type_verification {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content__form2-popup_type_verification {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .content__form2-popup_type_verification {
+    top: 249px;
+    right: 10px;
+  }
+}

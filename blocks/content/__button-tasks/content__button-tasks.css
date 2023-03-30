@@ -11,6 +11,10 @@
   margin-left: 30px;
 }
 
+.content__button-tasks:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 538px) {
   .content__button-tasks {
     margin: 20px 0 0 77px;

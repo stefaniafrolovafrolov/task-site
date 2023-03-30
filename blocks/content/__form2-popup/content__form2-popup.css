@@ -9,4 +9,17 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1050px) {
+  .content__form2-popup {
+    top: 65px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__form2-popup {
+    margin-left: 0;
+  }
 }

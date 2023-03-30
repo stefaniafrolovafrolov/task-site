@@ -1,3 +1,28 @@
 .content__form2_size {
   width: 200px;
 }
+
+@media screen and (max-width: 1050px) {
+  .content__form2_size {
+    margin: 0 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content__form2_size {
+    width: 520px;
+    margin: 36px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .content__form2_size {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content__form2_size {
+    width: 320px;
+  }
+}

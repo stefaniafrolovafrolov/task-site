@@ -8,3 +8,33 @@
   outline: none;
   resize: none;
 }
+
+@media screen and (max-width: 800px) {
+  .popup__textarea {
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .popup__textarea {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .popup__textarea {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .popup__textarea {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .popup__textarea {
+    margin-bottom: 30px;
+  }
+}

@@ -8,6 +8,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #f3efef;
+  cursor: none;
 }
 
 @media screen and (max-width: 425px) {

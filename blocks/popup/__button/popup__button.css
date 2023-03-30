@@ -13,3 +13,43 @@
   color: #ffffff;
   margin-bottom: 40px;
 }
+
+.popup__button:hover {
+  background: rgba(26, 102, 244, 1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .popup__button {
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .popup__button {
+    width: 420px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .popup__button {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .popup__button {
+    width: 260px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .popup__button {
+    height: 52px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,5 +1,6 @@
 .header__button-create {
   border: none;
+  outline: none;
   width: 285px;
   height: 49px;
   background: #4381f5;
@@ -12,4 +13,9 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.header__button-create:hover {
+  background: rgba(26, 102, 244, 1);
+  cursor: pointer;
 }

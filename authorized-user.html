@@ -7,12 +7,157 @@
     <link rel="stylesheet" href="./pages/index.css" type="text/css" />
     <title>Authorized user</title>
 
-    <style></style>
+    <style>
+       #menu__toggle {
+      display: none;
+      opacity: 0;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      left: 0;
+      transition: 0.6s ease-in-out;
+    }
+
+
+    .menu__btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 55px;
+      left: 87%;
+      width: 40px;
+      height: 20px;
+      cursor: pointer;
+      z-index: 9;
+
+      
+
+    }
+
+    @media (max-width: 575px) {
+        left: 88%;
+      }
+
+      @media (max-width: 320px) {
+        top: 32px;
+        left: 84%;
+      }
+
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      
+      background: rgba(255, 255, 255, 1);
+      transition-duration: .25s;
+    }
+
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+
+    .menu__box {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0px;
+      bottom: -100%;
+      width: 100%;
+      height: 350px;
+      z-index: 5;
+      margin: 0;
+      /*padding: 60px 0 60px 0;*/
+      list-style: none;
+      background: rgba(30, 70, 160, 1);
+      transition-duration: .25s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu__item {
+      display: block;
+      padding: 8px 0 8px 0;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition-duration: .25s;
+    }
+
+    .menu__item:hover {
+      background: #FF0000;
+    }
+
+  
+
+  .media-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+
+  }
+
+  .header__buttons_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__button-tasks_mobile {
+    width: 280px;
+margin: 0 0 10px 0;
+  }
+
+  .header__button-create_mobile {
+    width: 280px;
+    margin: 0 0 20px 0;
+  }
+
+  .header__button-close_mobile {
+    margin: 0 auto;
+  }
+
+  .header__user-name_mobile {
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+
+    </style>
   </head>
   <body class="root-authorized">
     <div class="page-authorized">
       <header class="header">
-        <div class="header__container">
+       <!-- <div class="header__container">
           <div class="header__user-name">
             <img
               class="header__avatar"
@@ -30,7 +175,63 @@
             </button>
           </div>
           <button type="button" class="header__button-close">Выйти</button>
+        </div>-->
+
+        <div class="header__container header__container_mobile">
+          <div class="header__user-name header__user-name_mobile">
+          <img
+          class="header__avatar"
+          src="./images/free-icon-user-149071 1.svg"
+          alt="изображение аватара пользователя"
+        />
+        <a href="/specific-issue-page.html">
+          <p class="header__title-avatar">Имя Пользователя</p></a
+        >
+      </div>
+       
+
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        
+        <div class="menu__box">
+
+          <div class="header__user-name header__user-name_mobile">
+            <img
+            class="header__avatar"
+            src="./images/free-icon-user-149071 1.svg"
+            alt="изображение аватара пользователя"
+          />
+          <a href="/specific-issue-page.html">
+            <p class="header__title-avatar">Имя Пользователя</p></a
+          >
         </div>
+
+
+         <!-- <li><a class="menu__item" href="#1">О нас</a></li>-->
+         <div class="header__buttons header__buttons_mobile">
+          <button type="button" class="header__button-tasks header__button-tasks_mobile">Задачи</button>
+          <button type="button" class="header__button-create header__button-create_mobile">
+            Создать задачу
+          </button>
+        </div>
+        <button type="button" class="header__button-close header__button-close_mobile">Выйти</button>
+      </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+      </div>
       </header>
 
       <main class="content">
@@ -55,9 +256,12 @@
             <div class="wrapper__content-form2">
               <form class="content__form2">
                 <p class="content__input2">Статус задачи</p>
-                <button class="content__button-input2" type="button"></button>
+                <button
+                  class="content__button-input2 content__button-input2_type_status"
+                  type="button"
+                ></button>
               </form>
-              <ul class="content__form2-popup">
+              <ul class="content__form2-popup content__form2-popup_type_status">
                 <li id="open" class="content__form2-item">Open</li>
                 <li id="close" class="content__form2-item">Close</li>
                 <li id="progress" class="content__form2-item">In progress</li>
@@ -73,8 +277,20 @@
           <div class="task-name__wrapper-form">
             <form class="content__form2">
               <p class="content__input2">Статус задачи</p>
-              <button class="content__button-input2" type="button"></button>
+              <button
+                class="content__button-input2 content__button-input2_type_task1"
+                type="button"
+              ></button>
             </form>
+
+            <ul class="content__form2-popup content__form2-popup_type_task1">
+              <li id="open" class="content__form2-item">Open</li>
+              <li id="close" class="content__form2-item">Close</li>
+              <li id="progress" class="content__form2-item">In progress</li>
+              <li id="verification" class="content__form2-item">
+                verification needed
+              </li>
+            </ul>
           </div>
 
           <h2 class="task-name__title">Название задачи</h2>
@@ -109,8 +325,20 @@
           <div class="task-name__wrapper-form">
             <form class="content__form2">
               <p class="content__input2">Статус задачи</p>
-              <button class="content__button-input2" type="button"></button>
+              <button
+                class="content__button-input2 content__button-input2_type_task2"
+                type="button"
+              ></button>
             </form>
+
+            <ul class="content__form2-popup content__form2-popup_type_task2">
+              <li id="open" class="content__form2-item">Open</li>
+              <li id="close" class="content__form2-item">Close</li>
+              <li id="progress" class="content__form2-item">In progress</li>
+              <li id="verification" class="content__form2-item">
+                verification needed
+              </li>
+            </ul>
           </div>
 
           <h2 class="task-name__title">Название задачи</h2>
@@ -145,8 +373,20 @@
           <div class="task-name__wrapper-form">
             <form class="content__form2">
               <p class="content__input2">Статус задачи</p>
-              <button class="content__button-input2" type="button"></button>
+              <button
+                class="content__button-input2 content__button-input2_type_task3"
+                type="button"
+              ></button>
             </form>
+
+            <ul class="content__form2-popup content__form2-popup_type_task3">
+              <li id="open" class="content__form2-item">Open</li>
+              <li id="close" class="content__form2-item">Close</li>
+              <li id="progress" class="content__form2-item">In progress</li>
+              <li id="verification" class="content__form2-item">
+                verification needed
+              </li>
+            </ul>
           </div>
 
           <h2 class="task-name__title">Название задачи</h2>
@@ -201,14 +441,47 @@
                   >Ошибка в названии</span
                 >
               </label>
+
               <form class="content__form2 content__form2_size">
                 <p class="content__input2 content__input2_size">
                   Статус задачи
                 </p>
-                <button class="content__button-input2" type="button"></button>
+                <button
+                  class="content__button-input2 content__button-input2_type_verification"
+                  type="button"
+                ></button>
               </form>
             </div>
             <form class="popup__form">
+              <ul
+                class="content__form2-popup content__form2-popup_type_verification"
+              >
+                <li
+                  id="open"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  Open
+                </li>
+                <li
+                  id="close"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  Close
+                </li>
+                <li
+                  id="progress"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  In progress
+                </li>
+                <li
+                  id="verification"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  Verification needed
+                </li>
+              </ul>
+
               <label class="popup__label-textarea">
                 <textarea
                   class="popup__textarea"

@@ -13,6 +13,11 @@
   border-radius: 5px;
 }
 
+.comments__footer-button:hover {
+  background: rgba(26, 102, 244, 1);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 475px) {
   .comments__footer-button {
     width: 310px;
