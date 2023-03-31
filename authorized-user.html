@@ -8,156 +8,274 @@
     <title>Authorized user</title>
 
     <style>
-       #menu__toggle {
-      display: none;
-      opacity: 0;
-    }
-
-    #menu__toggle:checked ~ .menu__btn > span {
-      transform: rotate(45deg);
-    }
-
-    #menu__toggle:checked ~ .menu__btn > span::before {
-      top: 0;
-      transform: rotate(0);
-    }
-
-    #menu__toggle:checked ~ .menu__btn > span::after {
-      top: 0;
-      transform: rotate(90deg);
-    }
-
-    #menu__toggle:checked ~ .menu__box {
-      visibility: visible;
-      left: 0;
-      transition: 0.6s ease-in-out;
-    }
-
-
-    .menu__btn {
-      display: flex;
-      align-items: center;
-      position: fixed;
-      top: 55px;
-      left: 87%;
-      width: 40px;
-      height: 20px;
-      cursor: pointer;
-      z-index: 9;
-
-      
-
-    }
-
-    @media (max-width: 575px) {
-        left: 88%;
+      .hamburger-menu {
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0.5s, opacity 0.5s linear;
       }
 
-      @media (max-width: 320px) {
-        top: 32px;
-        left: 84%;
+      @media (max-width: 768px) {
+        .hamburger-menu {
+          opacity: 1;
+          visibility: visible;
+        }
       }
 
+      @media (max-width: 768px) {
+        .header__container {
+          display: none;
+        }
+      }
 
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      
-      background: rgba(255, 255, 255, 1);
-      transition-duration: .25s;
-    }
+      #menu__toggle {
+        display: none;
+        opacity: 0;
+      }
 
-    .menu__btn > span::before {
-      content: '';
-      top: -8px;
-    }
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
 
-    .menu__btn > span::after {
-      content: '';
-      top: 8px;
-    }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
 
-    .menu__box {
-      display: block;
-      position: fixed;
-      visibility: hidden;
-      top: 0px;
-      bottom: -100%;
-      width: 100%;
-      height: 350px;
-      z-index: 5;
-      margin: 0;
-      /*padding: 60px 0 60px 0;*/
-      list-style: none;
-      background: rgba(30, 70, 160, 1);
-      transition-duration: .25s;
-      display: flex;
-      flex-direction: column;
-    }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
 
-    .menu__item {
-      display: block;
-      padding: 8px 0 8px 0;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      color: #FFFFFF;
-      text-decoration: none;
-      transition-duration: .25s;
-    }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+        transition: 0.6s ease-in-out;
+      }
 
-    .menu__item:hover {
-      background: #FF0000;
-    }
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 55px;
+        left: 87%;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 9;
+      }
 
-  
+      @media (max-width: 475px) {
+        .menu__btn {
+          top: 55px;
+          left: 86%;
+          width: 30px;
+          height: 15px;
+        }
+      }
+      @media (max-width: 425px) {
+        .menu__btn {
+          top: 30px;
+          left: 86%;
+          width: 30px;
+          height: 15px;
+        }
+      }
 
-  .media-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
 
-    @media (max-width: 575px) {
-      display: none;
-    }
+        background: rgba(255, 255, 255, 1);
+        transition-duration: 0.25s;
+      }
 
-  }
+      .menu__btn > span::before {
+        content: "";
+        top: -8px;
+      }
 
-  .header__buttons_mobile {
-    display: flex;
-    flex-direction: column;
-  }
+      .menu__btn > span::after {
+        content: "";
+        top: 8px;
+      }
 
-  .header__button-tasks_mobile {
-    width: 280px;
-margin: 0 0 10px 0;
-  }
+      .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0px;
+        bottom: -100%;
+        width: 100%;
+        height: 350px;
+        z-index: 5;
+        margin: 0;
+        list-style: none;
+        background: rgba(30, 70, 160, 1);
+        transition-duration: 0.25s;
+        display: flex;
+        flex-direction: column;
+      }
 
-  .header__button-create_mobile {
-    width: 280px;
-    margin: 0 0 20px 0;
-  }
+      @media (max-width: px) {
+        .menu__box {
+          height: 270px;
+        }
+      }
 
-  .header__button-close_mobile {
-    margin: 0 auto;
-  }
+      @media (max-width: 425px) {
+        .menu__box {
+          height: 270px;
+        }
+      }
 
-  .header__user-name_mobile {
-    align-self: flex-start;
-    margin-left: 30px;
-  }
+      .media-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
+        @media (max-width: 575px) {
+          display: none;
+        }
+      }
+
+      .header__avatar_mobile {
+        padding: 30px 0 30px 0;
+        width: 80px;
+        height: 80px;
+        cursor: none;
+      }
+
+      @media screen and (max-width: 425px) {
+        .header__avatar_mobile {
+          width: 40px;
+          height: 40px;
+          padding: 20px 0 20px 0;
+        }
+      }
+
+      .header__container_mobile {
+        width: 100%;
+        background: rgba(30, 70, 160, 1);
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        .header__container_mobile {
+          display: block;
+        }
+      }
+
+      .header__user-name_mobile {
+        align-self: flex-start;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header__title-avatar_mobile {
+        margin: 0 0 0 20px;
+        max-width: 206px;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #f3efef;
+        cursor: none;
+      }
+
+      @media screen and (max-width: 425px) {
+        .header__title-avatar_mobile {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+
+      .header__buttons_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header__button-tasks_mobile {
+        margin-right: 20px;
+        border: none;
+        width: 183px;
+        height: 49px;
+        background: #4381f5;
+        border-radius: 5px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 280px;
+        margin: 0 0 10px 0;
+      }
+
+      .header__button-tasks_mobile:hover {
+        background: rgba(26, 102, 244, 1);
+        cursor: pointer;
+      }
+
+      .header__button-create_mobile {
+        border: none;
+        outline: none;
+        width: 285px;
+        height: 49px;
+        background: #4381f5;
+        border-radius: 5px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 280px;
+        margin: 0 0 20px 0;
+      }
+
+      .header__button-create_mobile:hover {
+        background: rgba(26, 102, 244, 1);
+        cursor: pointer;
+      }
+
+      .header__button-close_mobile {
+        align-self: center;
+        height: 29px;
+        width: 85px;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: transparent;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+      }
+
+      .header__button-close_mobile:hover {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body class="root-authorized">
     <div class="page-authorized">
       <header class="header">
-       <!-- <div class="header__container">
+        <div class="header__container">
           <div class="header__user-name">
             <img
               class="header__avatar"
@@ -175,64 +293,54 @@ margin: 0 0 10px 0;
             </button>
           </div>
           <button type="button" class="header__button-close">Выйти</button>
-        </div>-->
+        </div>
+      </header>
 
-        <div class="header__container header__container_mobile">
-          <div class="header__user-name header__user-name_mobile">
+      <div class="header__container_mobile">
+        <div class="header__user-name_mobile">
           <img
-          class="header__avatar"
-          src="./images/free-icon-user-149071 1.svg"
-          alt="изображение аватара пользователя"
-        />
-        <a href="/specific-issue-page.html">
-          <p class="header__title-avatar">Имя Пользователя</p></a
-        >
-      </div>
-       
-
-
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox"/>
-        
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        
-        <div class="menu__box">
-
-          <div class="header__user-name header__user-name_mobile">
-            <img
-            class="header__avatar"
+            class="header__avatar_mobile"
             src="./images/free-icon-user-149071 1.svg"
             alt="изображение аватара пользователя"
           />
           <a href="/specific-issue-page.html">
-            <p class="header__title-avatar">Имя Пользователя</p></a
+            <p class="header__title-avatar_mobile">Имя Пользователя</p></a
           >
         </div>
 
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
 
-         <!-- <li><a class="menu__item" href="#1">О нас</a></li>-->
-         <div class="header__buttons header__buttons_mobile">
-          <button type="button" class="header__button-tasks header__button-tasks_mobile">Задачи</button>
-          <button type="button" class="header__button-create header__button-create_mobile">
-            Создать задачу
-          </button>
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <div class="menu__box">
+            <div class="header__user-name_mobile">
+              <img
+                class="header__avatar_mobile"
+                src="./images/free-icon-user-149071 1.svg"
+                alt="изображение аватара пользователя"
+              />
+              <a href="/specific-issue-page.html">
+                <p class="header__title-avatar">Имя Пользователя</p></a
+              >
+            </div>
+
+            <div class="header__buttons_mobile">
+              <button type="button" class="header__button-tasks_mobile">
+                Задачи
+              </button>
+              <button type="button" class="header__button-create_mobile">
+                Создать задачу
+              </button>
+            </div>
+            <button type="button" class="header__button-close_mobile">
+              Выйти
+            </button>
+          </div>
         </div>
-        <button type="button" class="header__button-close header__button-close_mobile">Выйти</button>
       </div>
-        
-      </div>
-
-
-
-
-
-
-
-
-      </div>
-      </header>
 
       <main class="content">
         <div class="content__header">
@@ -503,7 +611,6 @@ margin: 0 0 10px 0;
         </div>
       </div>
     </div>
-
     <script src="./scripts/index.js"></script>
   </body>
 </html>

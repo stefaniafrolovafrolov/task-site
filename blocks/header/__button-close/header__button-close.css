@@ -18,12 +18,12 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 776px) {
+/*@media screen and (max-width: 776px) {
   .header__button-close  {
     margin-top: 40px;
     margin-bottom: 10px;
   }
-}
+}*/
 
 @media screen and (max-width: 538px) {
   .header__button-close {

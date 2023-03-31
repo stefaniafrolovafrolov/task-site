@@ -14,12 +14,7 @@
   .header__buttons {
     flex-direction: column;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 776px) {
-  .header__buttons {
-    flex-direction: row;
+    margin: 26px 26px;
   }
 }
 

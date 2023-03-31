@@ -23,8 +23,8 @@
   }
 }
 
-@media screen and (max-width: 776px) {
+/*@media screen and (max-width: 776px) {
   .header__container {
     flex-direction: column;
   }
-}
+}*/
