@@ -1,0 +1,19 @@
+.header__title-avatar_mobile {
+  margin: 0 0 0 20px;
+  max-width: 206px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #f3efef;
+  cursor: none;
+}
+
+@media screen and (max-width: 425px) {
+  .header__title-avatar_mobile {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

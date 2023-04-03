@@ -1,0 +1,22 @@
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0px;
+  bottom: -100%;
+  width: 100%;
+  height: 350px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+  background: rgba(30, 70, 160, 1);
+  transition-duration: 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 425px) {
+  .menu__box {
+    height: 270px;
+  }
+}

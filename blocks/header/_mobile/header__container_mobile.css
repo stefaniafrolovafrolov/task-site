@@ -1,0 +1,11 @@
+.header__container_mobile {
+  width: 100%;
+  background: rgba(30, 70, 160, 1);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container_mobile {
+    display: block;
+  }
+}

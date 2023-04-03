@@ -32,6 +32,15 @@
 @import url("../blocks/header/__button-create/header__button-create.css");
 @import url("../blocks/header/__button-close/header__button-close.css");
 
+@import url("../blocks/header/_mobile/header__avatar_mobile.css");
+@import url("../blocks/header/_mobile/header__container_mobile.css");
+@import url("../blocks/header/_mobile/header__user-name_mobile.css");
+@import url("../blocks/header/_mobile/header__title-avatar_mobile.css");
+@import url("../blocks/header/_mobile/header__buttons_mobile.css");
+@import url("../blocks/header/_mobile/header__button-tasks_mobile.css");
+@import url("../blocks/header/_mobile/header__button-create_mobile.css");
+@import url("../blocks/header/_mobile/header__button-close_mobile.css");
+
 @import url("../blocks/content/content.css");
 @import url("../blocks/content/__header/content__header.css");
 @import url("../blocks/content/__button-tasks/content__button-tasks.css");
@@ -55,6 +64,7 @@
 @import url("../blocks/content/__form2-item/content__form2-item.css");
 @import url("../blocks/content/__form2-item/_size/content__form2-item_size.css");
 @import url("../blocks/content/__form2-popup/_type/content__form2-popup_type_verification.css");
+@import url("../blocks/content/__form2-popup/_type/content__form2-popup_type_status.css");
 
 @import url("../blocks/task-name/task-name.css");
 @import url("../blocks/task-name/_background/task-name_background.css");
@@ -90,10 +100,22 @@
 @import url("../blocks/popup/__button/popup__button.css");
 @import url("../blocks/popup/__label/popup__label.css");
 @import url("../blocks/popup/__label-textarea/popup__ladel-textarea.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
+
+@import url("../blocks/hamburger-menu/hamburger-menu.css");
+@import url("../blocks/hamburger-menu/menu/__toggle/menu__toggle.css");
+@import url("../blocks/hamburger-menu/menu/__btn/menu__btn.css");
+@import url("../blocks/hamburger-menu/menu/__box/menu__box.css");
+@import url("../blocks/hamburger-menu/media-wrapper/media-wrapper.css");
 
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__copyright/footer__copyright.css");
+
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");
+@import url("../blocks.css");

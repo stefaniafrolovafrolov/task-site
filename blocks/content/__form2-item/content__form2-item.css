@@ -16,5 +16,5 @@
 
 .content__form2-item:hover {
   background: #e1e9fa;
-  border: 2px solid #1a66f4;
+  outline: 2px solid #1a66f4;
 }

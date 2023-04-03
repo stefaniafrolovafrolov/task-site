@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,268 +8,22 @@
     <title>Authorized user</title>
 
     <style>
-      .hamburger-menu {
-        opacity: 0;
-        visibility: hidden;
-        transition: visibility 0.5s, opacity 0.5s linear;
-      }
+     
 
-      @media (max-width: 768px) {
-        .hamburger-menu {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
+    
 
-      @media (max-width: 768px) {
-        .header__container {
-          display: none;
-        }
-      }
+      
 
-      #menu__toggle {
-        display: none;
-        opacity: 0;
-      }
+      
 
-      #menu__toggle:checked ~ .menu__btn > span {
-        transform: rotate(45deg);
-      }
 
-      #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-      }
+    
 
-      #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-      }
+     
 
-      #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-        transition: 0.6s ease-in-out;
-      }
+     
 
-      .menu__btn {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        top: 55px;
-        left: 87%;
-        width: 40px;
-        height: 20px;
-        cursor: pointer;
-        z-index: 9;
-      }
-
-      @media (max-width: 475px) {
-        .menu__btn {
-          top: 55px;
-          left: 86%;
-          width: 30px;
-          height: 15px;
-        }
-      }
-      @media (max-width: 425px) {
-        .menu__btn {
-          top: 30px;
-          left: 86%;
-          width: 30px;
-          height: 15px;
-        }
-      }
-
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 1px;
-
-        background: rgba(255, 255, 255, 1);
-        transition-duration: 0.25s;
-      }
-
-      .menu__btn > span::before {
-        content: "";
-        top: -8px;
-      }
-
-      .menu__btn > span::after {
-        content: "";
-        top: 8px;
-      }
-
-      .menu__box {
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0px;
-        bottom: -100%;
-        width: 100%;
-        height: 350px;
-        z-index: 5;
-        margin: 0;
-        list-style: none;
-        background: rgba(30, 70, 160, 1);
-        transition-duration: 0.25s;
-        display: flex;
-        flex-direction: column;
-      }
-
-      @media (max-width: px) {
-        .menu__box {
-          height: 270px;
-        }
-      }
-
-      @media (max-width: 425px) {
-        .menu__box {
-          height: 270px;
-        }
-      }
-
-      .media-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        @media (max-width: 575px) {
-          display: none;
-        }
-      }
-
-      .header__avatar_mobile {
-        padding: 30px 0 30px 0;
-        width: 80px;
-        height: 80px;
-        cursor: none;
-      }
-
-      @media screen and (max-width: 425px) {
-        .header__avatar_mobile {
-          width: 40px;
-          height: 40px;
-          padding: 20px 0 20px 0;
-        }
-      }
-
-      .header__container_mobile {
-        width: 100%;
-        background: rgba(30, 70, 160, 1);
-        display: none;
-      }
-
-      @media screen and (max-width: 768px) {
-        .header__container_mobile {
-          display: block;
-        }
-      }
-
-      .header__user-name_mobile {
-        align-self: flex-start;
-        margin-left: 30px;
-        display: flex;
-        align-items: center;
-      }
-
-      .header__title-avatar_mobile {
-        margin: 0 0 0 20px;
-        max-width: 206px;
-        font-family: "Inter";
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #f3efef;
-        cursor: none;
-      }
-
-      @media screen and (max-width: 425px) {
-        .header__title-avatar_mobile {
-          font-size: 14px;
-          line-height: 17px;
-        }
-      }
-
-      .header__buttons_mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .header__button-tasks_mobile {
-        margin-right: 20px;
-        border: none;
-        width: 183px;
-        height: 49px;
-        background: #4381f5;
-        border-radius: 5px;
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-        width: 280px;
-        margin: 0 0 10px 0;
-      }
-
-      .header__button-tasks_mobile:hover {
-        background: rgba(26, 102, 244, 1);
-        cursor: pointer;
-      }
-
-      .header__button-create_mobile {
-        border: none;
-        outline: none;
-        width: 285px;
-        height: 49px;
-        background: #4381f5;
-        border-radius: 5px;
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-        width: 280px;
-        margin: 0 0 20px 0;
-      }
-
-      .header__button-create_mobile:hover {
-        background: rgba(26, 102, 244, 1);
-        cursor: pointer;
-      }
-
-      .header__button-close_mobile {
-        align-self: center;
-        height: 29px;
-        width: 85px;
-        font-family: "Inter";
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-        background: transparent;
-        border: none;
-        outline: none;
-        margin: 0 auto;
-      }
-
-      .header__button-close_mobile:hover {
-        cursor: pointer;
-      }
+      
     </style>
   </head>
   <body class="root-authorized">
@@ -391,7 +145,7 @@
               ></button>
             </form>
 
-            <ul class="content__form2-popup content__form2-popup_type_task1">
+            <ul class="content__form2-popup content__form2-popup_type_task1" >
               <li id="open" class="content__form2-item">Open</li>
               <li id="close" class="content__form2-item">Close</li>
               <li id="progress" class="content__form2-item">In progress</li>

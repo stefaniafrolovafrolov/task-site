@@ -1,0 +1,23 @@
+.header__button-tasks_mobile {
+  margin-right: 20px;
+  border: none;
+  width: 183px;
+  height: 49px;
+  background: #4381f5;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 280px;
+  margin: 0 0 10px 0;
+}
+
+.header__button-tasks_mobile:hover {
+  background: rgba(26, 102, 244, 1);
+  cursor: pointer;
+}
