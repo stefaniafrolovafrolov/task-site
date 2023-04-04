@@ -1,3 +1,43 @@
+const buttonOpenPopup = document.querySelector(
+    ".header__button-create"
+  )
+  
+  const buttonClosePopup = document.querySelector(".popup__close")
+  
+  const popup = document.querySelector(".popup")
+  
+  function openPopup(popup) {
+    popup.classList.add("popup_opened")
+    document.addEventListener("keydown", closePopupOnEsc)
+  }
+  
+  function closePopup(popup) {
+    popup.classList.remove("popup_opened")
+    document.removeEventListener("keydown", closePopupOnEsc)
+  }
+  
+  function closePopupOnEsc(event) {
+    if (event.code == "Escape") {
+      closePopup(popup)
+    }
+  }
+  
+  popup.addEventListener("click", (evt) => {
+    if (evt.currentTarget === evt.target) {
+      closePopup(popup)
+    }
+  })
+  
+  buttonOpenPopup.addEventListener("click", () => {
+    openPopup(popup)
+  })
+  
+  buttonClosePopup.addEventListener("click", () => {
+    closePopup(popup)
+  })
+
+
+
 function openPopupContent(popup) {
   popup.classList.add("content__form2-popup_opened")
   document.addEventListener("keydown", closePopupContentOnEsc)

@@ -1,5 +1,5 @@
 const buttonOpenPopup = document.querySelector(
-  ".content__button-tasks_type_tasks"
+  ".header__button-create"
 )
 
 const buttonClosePopup = document.querySelector(".popup__close")

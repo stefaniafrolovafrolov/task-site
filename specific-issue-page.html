@@ -231,6 +231,88 @@
       <footer class="footer">
         <p class="footer__copyright">&copy; Знак авторского права</p>
       </footer>
+
+      <div class="popup">
+        <div class="popup__container">
+          <div class="popup__header">
+            <button class="popup__close"></button>
+            <h2 class="popup__title">Создать новую задачу</h2>
+          </div>
+          <div class="popup__body">
+            <div class="popup__wrapper-block">
+              <label class="popup__label">
+                <input
+                  class="popup__input"
+                  id="name"
+                  type="text"
+                  placeholder="Название задачи"
+                >
+                <span class="name-error error error_popup-top"
+                  >Ошибка в названии</span
+                >
+              </label>
+
+              <form class="content__form2 content__form2_size">
+                <p class="content__input2 content__input2_size">
+                  Статус задачи
+                </p>
+                <button
+                  class="content__button-input2 content__button-input2_type_verification"
+                  type="button"
+                ></button>
+              </form>
+            </div>
+            <form class="popup__form">
+              <ul
+                class="content__form2-popup content__form2-popup_type_verification"
+              >
+                <li
+                  id="open5"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  Open
+                </li>
+                <li
+                  id="close5"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  Close
+                </li>
+                <li
+                  id="progress5"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  In progress
+                </li>
+                <li
+                  id="verification5"
+                  class="content__form2-item content__form2-item_size"
+                >
+                  Verification needed
+                </li>
+              </ul>
+
+              <label class="popup__label-textarea">
+                <textarea
+                  class="popup__textarea"
+                  rows="10"
+                  cols="45"
+                  name="text"
+                  id="text"
+                  placeholder="Описание задачи"
+                ></textarea>
+                <span class="text-error error error_popup-top2"
+                  >Слишком короткое описание</span
+                >
+              </label>
+              <button class="popup__button" type="submit">
+                Создать задачу
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
     </div>
     <script src="scripts/specific.js"></script>
   </body>
