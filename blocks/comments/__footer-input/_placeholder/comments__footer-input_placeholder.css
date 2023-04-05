@@ -1,0 +1,15 @@
+.comments__footer-input_placeholder {
+  /*padding: 24px 24px 24px 24px;*/
+}
+
+.comments__footer-input_placeholder::placeholder {
+  padding: 0;
+}
+
+@media screen and (max-width: 636px) {
+  .comments__footer-input_placeholder {
+    /*padding: 14px 14px 14px 14px;*/
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

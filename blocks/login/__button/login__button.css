@@ -21,7 +21,9 @@
 
 @media screen and (max-width: 950px) {
   .login__button {
-    width: 80%;
+    font-size: 25px;
+    line-height: 30px;
+    width: 535px;
     margin-top: 45px;
   }
 }
@@ -41,12 +43,18 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .login__button {
+    height: 52px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .login__button {
     margin-top: 0;
     font-size: 14px;
     line-height: 17px;
     width: 258px;
-    height: 52px;
+    
   }
 }

@@ -17,6 +17,7 @@
 @media screen and (max-width: 620px) {
   .login__body {
     width: 500px;
+    height: 404px;
   }
 }
 
@@ -29,6 +30,7 @@
 @media screen and (max-width: 420px) {
   .login__body {
     width: 340px;
+    height: 370px;
   }
 }
 

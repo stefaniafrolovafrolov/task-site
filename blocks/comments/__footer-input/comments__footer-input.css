@@ -7,6 +7,12 @@
   background: #f4f6fa;
   border: 1px solid #cedbf5;
   border-radius: 5px;
+  padding: 24px 24px 24px 24px;
+  resize: none;
+}
+
+.comments__footer-input::placeholder {
+  padding-left: 0;
 }
 
 @media screen and (max-width: 1250px) {
@@ -24,6 +30,7 @@
 @media screen and (max-width: 900px) {
   .comments__footer-input {
     height: 120px;
+    padding: 14px 14px 80px 14px;
   }
 }
 
@@ -36,6 +43,15 @@
 @media screen and (max-width: 716px) {
   .comments__footer-input {
     width: 500px;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .comments__footer-input::placeholder {
+    padding-left: 0;
+    max-width: 232px;
+    font-weight: 300;
+    font-size: 14px;
   }
 }
 

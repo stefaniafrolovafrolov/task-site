@@ -111,11 +111,9 @@
 @import url("../blocks/footer/__copyright/footer__copyright.css");
 
 @import url("../blocks/link/link.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
-@import url("../blocks.css");
+@import url("../blocks/comments/__footer-input/_placeholder/comments__footer-input_placeholder.css");
+
+@import url("../blocks/task-name/__text/_padding/task-name__text_padding.css");
+@import url("../blocks/wrapper-task-name/_margin/wrapper-task-name_margin.css");
+@import url("../blocks/task-name/__list/_margin/task-name__list_margin.css");
+

@@ -3,33 +3,51 @@
   border: 1px solid #cedbf5;
   border-radius: 5px;
   margin-bottom: 40px;
-  width: 600px;
-  height: 160px;
+  width: 552px;
+  height: 136px;
   outline: none;
   resize: none;
+  padding: 14px 24px 14px 24px;
+}
+
+.popup__textarea::placeholder {
+  padding: 0;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: justify;
+  color: #1e46a0;
 }
 
 @media screen and (max-width: 800px) {
   .popup__textarea {
-    width: 520px;
+    width: 472px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .popup__textarea::placeholder {
+    font-weight: 300;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 618px) {
   .popup__textarea {
-    width: 420px;
+    padding: 14px 14px 40px 14px;
+    width: 392px;
+    height: 112px;
   }
 }
 
 @media screen and (max-width: 520px) {
   .popup__textarea {
-    width: 320px;
+    width: 292px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .popup__textarea {
-    width: 260px;
+    width: 232px;
   }
 }
 

@@ -2,6 +2,11 @@ const buttonOpenPopup = document.querySelector(
   ".header__button-create"
 )
 
+const buttonMobileOpenPopup = document.querySelector(
+  ".header__button-create_mobile"
+)
+
+
 const buttonClosePopup = document.querySelector(".popup__close")
 
 const popup = document.querySelector(".popup")
@@ -29,6 +34,10 @@ popup.addEventListener("click", (evt) => {
 })
 
 buttonOpenPopup.addEventListener("click", () => {
+  openPopup(popup)
+})
+
+buttonMobileOpenPopup.addEventListener("click", () => {
   openPopup(popup)
 })
 

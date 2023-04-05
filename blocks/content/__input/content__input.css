@@ -9,11 +9,11 @@
   border-radius: 5px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  
+  padding: 14px 14px 14px 14px;
 }
 
 .content__input::placeholder {
-  padding: 14px 0 14px 14px;
+  /* padding: 14px 0 14px 14px;*/
   max-width: 77px;
   font-family: "Inter";
   font-weight: 400;

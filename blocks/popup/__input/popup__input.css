@@ -6,6 +6,12 @@
   width: 380px;
   height: 50px;
   outline: none;
+  padding: 13px 24px 13px 24px;
+}
+
+.popup__input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 800px) {
@@ -23,6 +29,7 @@
 @media screen and (max-width: 520px) {
   .popup__input {
     width: 320px;
+    padding: 14px 14px 14px 14px;
   }
 }
 

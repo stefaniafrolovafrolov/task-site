@@ -1,7 +1,9 @@
 .error {
   position: absolute;
-  top: 85px;
-  left: 25px;
+  /* top: 85px;
+  left: 25px;*/
+  top: 70px;
+  left: 30px;
   max-width: 552px;
   font-family: "Inter";
   font-weight: 300;
@@ -9,6 +11,13 @@
   line-height: 150%;
   color: #a01e1e;
   display: block;
+}
+
+@media screen and (max-width: 420px) {
+  .error {
+    top: 50px;
+    left: 15px;
+  }
 }
 
 @media screen and (max-width: 360px) {
